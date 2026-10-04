@@ -1,0 +1,48 @@
+Started by timer
+Running as SYSTEM
+ERROR: Failed to notify endpoint with url 'https://webhooks.linuxcontainers.org'
+java.lang.NoClassDefFoundError: org/apache/commons/lang/StringUtils
+	at PluginClassLoader for notification//com.tikal.hudson.plugins.notification.Phase.isURLValid(Phase.java:88)
+	at PluginClassLoader for notification//com.tikal.hudson.plugins.notification.Phase.handle(Phase.java:373)
+	at PluginClassLoader for notification//com.tikal.hudson.plugins.notification.Phase.handle(Phase.java:72)
+	at PluginClassLoader for notification//com.tikal.hudson.plugins.notification.JobListener.onStarted(JobListener.java:34)
+	at hudson.model.listeners.RunListener.lambda$fireStarted$3(RunListener.java:257)
+	at jenkins.util.Listeners.lambda$notify$0(Listeners.java:59)
+	at jenkins.util.Listeners.notify(Listeners.java:67)
+	at hudson.model.listeners.RunListener.fireStarted(RunListener.java:255)
+	at hudson.model.Run.execute(Run.java:1847)
+	at PluginClassLoader for matrix-project//hudson.matrix.MatrixBuild.run(MatrixBuild.java:331)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:456)
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.lang.StringUtils
+	... 12 more
+Failed to notify endpoint with url 'https://webhooks.linuxcontainers.org' - java.lang.NoClassDefFoundError: org/apache/commons/lang/StringUtils
+Building on the built-in node in workspace /var/lib/jenkins/workspace/lxc-ci-artifacts
+Triggering lxc-ci-artifacts » armhf,distrobuilder-image,vm,default
+Triggering lxc-ci-artifacts » arm64,distrobuilder-image,vm,default
+Triggering lxc-ci-artifacts » amd64,distrobuilder-image,vm,default
+Triggering lxc-ci-artifacts » riscv64,distrobuilder-image,vm,default
+Triggering lxc-ci-artifacts » loong64,distrobuilder-image,vm,default
+lxc-ci-artifacts » armhf,distrobuilder-image,vm,default completed with result SUCCESS
+lxc-ci-artifacts » arm64,distrobuilder-image,vm,default completed with result SUCCESS
+lxc-ci-artifacts » amd64,distrobuilder-image,vm,default completed with result SUCCESS
+lxc-ci-artifacts » riscv64,distrobuilder-image,vm,default completed with result SUCCESS
+lxc-ci-artifacts » loong64,distrobuilder-image,vm,default completed with result SUCCESS
+ERROR: Failed to notify endpoint with url 'https://webhooks.linuxcontainers.org'
+java.lang.NoClassDefFoundError: org/apache/commons/lang/StringUtils
+	at PluginClassLoader for notification//com.tikal.hudson.plugins.notification.Phase.isURLValid(Phase.java:88)
+	at PluginClassLoader for notification//com.tikal.hudson.plugins.notification.Phase.handle(Phase.java:373)
+	at PluginClassLoader for notification//com.tikal.hudson.plugins.notification.Phase.handle(Phase.java:72)
+	at PluginClassLoader for notification//com.tikal.hudson.plugins.notification.JobListener.onCompleted(JobListener.java:39)
+	at hudson.model.listeners.RunListener.lambda$fireCompleted$1(RunListener.java:234)
+	at jenkins.util.Listeners.lambda$notify$0(Listeners.java:59)
+	at jenkins.util.Listeners.notify(Listeners.java:67)
+	at hudson.model.listeners.RunListener.fireCompleted(RunListener.java:232)
+	at hudson.model.Run.execute(Run.java:1890)
+	at PluginClassLoader for matrix-project//hudson.matrix.MatrixBuild.run(MatrixBuild.java:331)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:456)
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.lang.StringUtils
+	... 12 more
+Failed to notify endpoint with url 'https://webhooks.linuxcontainers.org' - java.lang.NoClassDefFoundError: org/apache/commons/lang/StringUtils
+Finished: SUCCESS
